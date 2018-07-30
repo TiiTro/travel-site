@@ -1,3 +1,4 @@
+/* CLEARFIX */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* CLEARFIX */
+a {
+  color: #d59541;
+}
 .btn {
   background-color: #1c5785;
   color: #FFF;
@@ -30,6 +33,19 @@ img {
   .btn--large {
     font-size: 1.25rem;
   }
+}
+.generic-content-container p {
+  font-weight: 300;
+  line-height: 1.65rem;
+  margin: 1.8rem 0;
+}
+@media (min-width: 530px) {
+  .generic-content-container p {
+    font-size: 1.125rem;
+  }
+}
+.generic-content-container p a {
+  font-weight: 600;
 }
 .large-hero {
   border-bottom: 10px solid #1c5785;
@@ -92,6 +108,7 @@ img {
   font-size: 1.9rem;
   font-weight: 300;
   color: #1c5785;
+
 }
 @media (min-width: 530px) {
   .headline {
@@ -150,15 +167,25 @@ img {
   margin-right: -4.06rem;
 }
 .row--gutters > div {
-  padding-right: 4.06rem;
-  /* would need a box-sizing: border-box, but it's already a global value */
+  padding-right: 4.06rem;/* would need a box-sizing: border-box, but it's already a global value */
 }
 @media (min-width: 530px) {
   .row__img {
     width: 100%;
   }
 }
+@media (max-width: 529px) {
+  .row__img {
+    width: 100%;
+  }
+}
+.row__b-margin-until-medium {
+  margin-bottom: 2.5rem;
+}
 @media (min-width: 800px) {
+  .row__b-margin-until-medium {
+    margin-bottom: 0;
+  }
   .row__medium-4 {
     float: left;
     width: 33.33%;
