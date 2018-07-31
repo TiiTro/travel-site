@@ -1,0 +1,19 @@
+.feature-item {
+
+  &__icon {
+
+  }
+
+  &__heading {
+
+  }
+
+  &__text {
+    color: $mainWhite;
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}
