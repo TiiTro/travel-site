@@ -6,8 +6,17 @@
     margin-right: -4.06rem;
   }
 
+  &--gutters-large {
+    margin-right: -6.25rem;
+  }
+
   &--gutters > div {
     padding-right: 4.06rem;
+    /* would need a box-sizing: border-box, but it's already a global value */
+  }
+
+  &--gutters-large > div {
+    padding-right: 6.25rem;
     /* would need a box-sizing: border-box, but it's already a global value */
   }
 
@@ -41,6 +50,11 @@
       width: 37%;
     }
 
+    &__medium-6 {
+      width: 50%;
+      float: left;
+    }
+
     &__medium-8 {
       float: left;
       width: 66.66%;
@@ -49,6 +63,8 @@
     &__medium-8--smaller{
       width: 63%;
     }
+
+
   }
 
 
