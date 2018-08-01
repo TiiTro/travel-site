@@ -1,3 +1,6 @@
+/*///////////////////////////////
+//////// MEDIA-QUERIES //////////
+///////////////////////////////*/
 @define-mixin atSmallest {
   @media (max-width: 529px) {
     @mixin-content;
@@ -22,7 +25,9 @@
   }
 }
 
-/* CLEARFIX */
+/*///////////////////////////////
+//////// CLEARFIX ///////////////
+///////////////////////////////*/
 @define-mixin clearfix {
   &::after {
     content: "";

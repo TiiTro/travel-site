@@ -1,4 +1,9 @@
-/* CLEARFIX */
+/*///////////////////////////////
+//////// MEDIA-QUERIES //////////
+///////////////////////////////*/
+/*///////////////////////////////
+//////// CLEARFIX ///////////////
+///////////////////////////////*/
 * {
   margin: 0;
   padding: 0;
@@ -34,21 +39,56 @@ a {
     font-size: 1.25rem;
   }
 }
-.feature-item__icon {}
-.feature-item__heading {}
+.feature-item {
+  position: relative;
+  padding-bottom: 1.8rem;
+}
+@media (min-width: 530px) {
+  .feature-item {
+    padding-left: 5.8rem;
+    padding-bottom: 2.5rem;
+  }
+}
+.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 530px) {
+  .feature-item__icon {
+    position: absolute;
+    left: 0;
+  }
+}
+.feature-item__title{
+  color: #FFF;
+  font-size: 1.6rem;
+  margin-top: .9em;
+  text-align: center;
+}
+@media (min-width: 530px) {
+  .feature-item__title {
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    text-align: left;
+  }
+}
 .feature-item__text {
   color: #FFF;
+  text-align: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 530px) {
   .feature-item__text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
+    line-height: 1.8rem;
+    text-align: left;
   }
 }
 .generic-content-container p {
   font-weight: 300;
   line-height: 1.65rem;
-  margin: 1.8rem 0;
+  margin: 0 0 1.8rem 0;
 }
 @media (min-width: 530px) {
   .generic-content-container p {
@@ -148,13 +188,13 @@ a {
 .headline--light {
   font-weight: 100;
 }
-.headline--b-margin-small {
+.margin--b-small {
   margin-bottom: .5em;
 }
-.headline--b-margin-large {
-  margin-bottom: 1.6em;
+.margin--b-large {
+  margin-bottom: 1.6rem;
 }
-.headline--padding-2rem {
+.padding--2rem {
   padding: 2rem 0 1rem 0;
 }
 .page-section {
@@ -223,17 +263,37 @@ a {
   }
 }
 .section-title {
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   font-weight: 300;
   color: #FFF;
   text-align: center;
+  margin-bottom: 3rem;
 }
 .section-title strong {
   font-weight: 500;
 }
+@media (min-width: 530px) {
+  .section-title {
+    font-size: 3.75rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 5rem;
+  }
+}
 .section-title__icon {
-  margin-right: 1rem;
-  transform: translateY(10%);
+  display: block;
+  margin: 2rem auto .6rem auto;
+}
+@media (min-width: 530px) {
+  .section-title__icon {
+    display: inline-block;
+    margin-right: 1rem;
+    transform: translateY(10%);
+    margin-bottom: 0;
+  }
 }
 .wrapper {
   padding-left: 18px;
