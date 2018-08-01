@@ -9,6 +9,10 @@
     font-weight: 500;
   }
 
+  &--blue {
+    color: $mainBlue;
+  }
+
   @mixin atSmall {
     font-size: 3.75rem;
     margin-bottom: 4rem;
@@ -26,7 +30,7 @@
     @mixin atSmall {
       display: inline-block;
       margin-right: 1rem;
-      transform: translateY(10%);
+      transform: translateY(13%);
       margin-bottom: 0;
     }
   }

@@ -1,7 +1,11 @@
 .margin {
 
   &--b-small {
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
+  }
+
+  &--b-medium {
+    margin-bottom: 1rem;
   }
 
   &--b-large {
