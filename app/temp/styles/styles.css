@@ -378,7 +378,6 @@ a {
 }
 .testimonial--last {
   margin-bottom: 1rem;
-  margin-right: -1rem;
 }
 @media (min-width: 1010px) {
   .testimonial {
