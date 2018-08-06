@@ -11,6 +11,14 @@
   &--b-large {
     margin-bottom: 1.6rem;
   }
+
+  &--l-medium {
+    margin-left: 2rem;
+  }
+
+  &--l-large {
+    margin-left: 3rem;
+  }
 }
 
 .padding {
