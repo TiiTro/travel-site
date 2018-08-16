@@ -376,6 +376,18 @@ a {
     margin-bottom: 0;
   }
 }
+.site-footer {
+  background-color: #1c5785;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.site-footer__text {
+  display: block;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 1.2rem;
+}
 /* Do not edit modules/_sprite directly, since it's generated automatically by Gulp. Instead edit gulp/templates/sprite */
 .icon {
       background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
