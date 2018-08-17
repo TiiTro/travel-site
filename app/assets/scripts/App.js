@@ -1,3 +1,4 @@
+var $ = require('jquery');
 var Person = require('./modules/Person');
 
 var john = new Person("Kittie Cattie", "blue");
