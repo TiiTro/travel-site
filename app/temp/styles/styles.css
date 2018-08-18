@@ -462,11 +462,16 @@ a {
 }
 .site-header__menu-content {
   display: none;
+  padding-top: 100px;
 }
 @media (min-width: 800px) {
   .site-header__menu-content {
     display: block;
+    padding-top: 0;
   }
+}
+.site-header__menu-content--is-visible {
+  display: block;
 }
 .testimonial {
   background-color: rgba(255, 255, 255, .7);
