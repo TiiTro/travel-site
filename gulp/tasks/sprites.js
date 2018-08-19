@@ -7,7 +7,6 @@ del = require('del');
 var config = {
   mode: {
     css: {
-      sprite: 'sprite.svg',
       render: {
         css: {
           template: './gulp/templates/sprite.css'
