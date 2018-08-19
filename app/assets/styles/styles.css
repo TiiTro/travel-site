@@ -12,11 +12,9 @@
 @import "modules/_row";
 @import "modules/_section-title";
 @import "modules/_site-footer";
-<<<<<<< HEAD
 @import "modules/_sprite";
-=======
 @import "modules/_site-header";
->>>>>>> header
 @import "modules/_testimonial";
 @import "modules/_wrapper";
 @import "normalize.css";
+@import "modules/_reveal-item";

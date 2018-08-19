@@ -1054,3 +1054,10 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+.reveal-item {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+.reveal-item--is-visible {
+  opacity: 1;
+}
