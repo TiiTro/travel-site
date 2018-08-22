@@ -451,7 +451,12 @@ a {
   display: block;
   color: white;
   font-weight: 200;
-  margin-bottom: 1.2rem;
+  margin: 0 1.5rem 1.2rem 1.5rem;
+}
+@media (min-width: 800px) {
+  .site-footer__text {
+    margin: 0 5rem 1.2rem 5rem;
+  }
 }
 /* Do not edit modules/_sprite directly, since it's generated automatically by Gulp. Instead edit gulp/templates/sprite */
 .icon {
@@ -537,7 +542,7 @@ a {
   transition: background-color .3s ease-out;
 }
 .site-header--is-expanded {
-  background-color: rgba(28,87,133, .75);
+  background-color: rgba(23, 51, 72, .85);
 }
 @media (min-width: 800px) {
   .site-header {
@@ -632,6 +637,7 @@ a {
   transform: scale(1.2);
   transition: all .3s ease-out;
   padding-top: 6rem;
+  padding-bottom: .5rem;
   text-align: center;
   z-index: -100;
   position: relative;
@@ -641,6 +647,7 @@ a {
     opacity: 1;
     z-index: 1;
     padding-top: 0;
+    padding-bottom: 0;
     transform: scale(1);
   }
 }

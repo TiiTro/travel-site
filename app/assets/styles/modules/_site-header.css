@@ -6,7 +6,7 @@
   transition: background-color .3s ease-out;
 
   &--is-expanded {
-    background-color: rgba($mainBlue, .75);
+    background-color: rgba(23, 51, 72, .85);
   }
 
   @mixin atMedium {
@@ -118,6 +118,7 @@
     transform: scale(1.2);
     transition: all .3s ease-out;
     padding-top: 6rem;
+    padding-bottom: .5rem;
     text-align: center;
     z-index: -100;
     position: relative;
@@ -126,6 +127,7 @@
       opacity: 1;
       z-index: 1;
       padding-top: 0;
+      padding-bottom: 0;
       transform: scale(1);
     }
 
