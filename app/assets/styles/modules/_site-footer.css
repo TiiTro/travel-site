@@ -8,6 +8,10 @@
     display: block;
     color: white;
     font-weight: 200;
-    margin-bottom: 1.2rem;
+    margin: 0 1.5rem 1.2rem 1.5rem;
+
+    @mixin atMedium {
+      margin: 0 5rem 1.2rem 5rem;
+    }
   }
 }
