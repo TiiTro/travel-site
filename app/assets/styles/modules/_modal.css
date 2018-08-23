@@ -1,0 +1,75 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, .92);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__content--centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  &__description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65rem;
+  }
+
+
+  &__close {
+    position: absolute;
+    top: .8rem;
+    right: .6rem;
+    /*font-size: 2rem;
+    font-weight: 300;
+    color: $mainBlue;
+    transform: scaleX(1.4);*/
+
+    &::before, &::after {
+      content: "";
+      width: 2rem;
+      height: .25rem;
+      background-color: $mainBlue;
+      display: block;
+      backface-visibility: hidden;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      transform-origin: right bottom;
+    }
+
+    &::after {
+      transform: rotate(45deg) translate(1px, -7px);
+      transform-origin: left bottom;
+    }
+
+    &:hover::before, &:hover::after {
+      background-color: $mainOrange;
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(.8);
+    }
+  }
+
+}

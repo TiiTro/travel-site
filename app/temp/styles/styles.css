@@ -410,7 +410,6 @@ a {
   font-weight: 300;
   color: #FFF;
   text-align: center;
-  margin-bottom: 3rem;
 }
 .section-title strong {
   font-weight: 500;
@@ -418,15 +417,19 @@ a {
 .section-title--blue {
   color: #1c5785;
 }
+.section-title--more-b-margin {
+  margin-bottom: 3rem;
+}
+.section-title--less-margin {
+  margin-bottom: 1.3rem;
+}
 @media (min-width: 530px) {
   .section-title {
-    font-size: 3.75rem;
-    margin-bottom: 4rem;
+    font-size: 3.75rem;/*margin-bottom: 4rem;*/
   }
 }
 @media (min-width: 1010px) {
-  .section-title {
-    margin-bottom: 5rem;
+  .section-title {/*margin-bottom: 5rem;*/
   }
 }
 .section-title__icon {
@@ -465,73 +468,61 @@ a {
 .icon--clear-view-escapes {
     width: 142.4px;
     height: 59.53px;
-
     background-position: 0 0;
   }
 .icon--comment {
     width: 64px;
     height: 64px;
-
     background-position: 99.70443349753694% 0;
   }
 .icon--facebook {
     width: 21.23px;
     height: 42.01px;
-
     background-position: 26.040607071652357% 45.795830448496034%;
   }
 .icon--fire {
     width: 56px;
     height: 64px;
-
     background-position: 0 99.56481481481481%;
   }
 .icon--globe {
     width: 64px;
     height: 64px;
-
     background-position: 27.586206896551722% 99.56481481481481%;
   }
 .icon--instagram {
     width: 42.01px;
     height: 42.01px;
-
     background-position: 63.2917018534157% 49.234556504346486%;
   }
 .icon--mail {
     width: 64px;
     height: 48px;
-
     background-position: 0 48.00806451612903%;
   }
 .icon--rain {
     width: 64px;
     height: 64px;
-
     background-position: 99.70443349753694% 59.25925925925926%;
   }
 .icon--star {
     width: 64px;
     height: 64px;
-
     background-position: 59.11330049261084% 99.56481481481481%;
   }
 .icon--twitter {
     width: 51.78px;
     height: 42.06px;
-
     background-position: 94.04330452560171% 98.50700323226104%;
   }
 .icon--wifi {
     width: 60px;
     height: 64px;
-
     background-position: 68.79227053140097% 0;
   }
 .icon--youtube {
     width: 34.75px;
     height: 42px;
-
     background-position: 36.69752421959096% 45.792307692307695%;
   }
 .site-header {
@@ -701,6 +692,10 @@ a {
 }
 .wrapper--medium {
   max-width: 976px;
+}
+.wrapper--narrow {
+  max-width: 470px;
+  margin: 0 auto;
 }
 .wrapper--no-padding-until-medium {
   padding-left: 0;
@@ -1080,4 +1075,93 @@ textarea {
 .reveal-item--is-visible {
   opacity: 1;
   transform: scale(1);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, .92);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+}
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.modal__content--centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__description {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.65rem;
+}
+.modal__close {
+  position: absolute;
+  top: .8rem;
+  right: .6rem;
+}
+/*font-size: 2rem;
+    font-weight: 300;
+    color: $mainBlue;
+    transform: scaleX(1.4);*/
+.modal__close::before, .modal__close::after {
+  content: "";
+  width: 2rem;
+  height: .25rem;
+  background-color: #1c5785;
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.modal__close::before {
+  transform: rotate(-45deg);
+  transform-origin: right bottom;
+}
+.modal__close::after {
+  transform: rotate(45deg) translate(1px, -7px);
+  transform-origin: left bottom;
+}
+.modal__close:hover::before, .modal__close:hover::after {
+  background-color: #d59541;
+  cursor: pointer;
+}
+.modal__close:active {
+  transform: scale(.8);
+}
+.social-icons {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.social-icons__icon {
+  background-color: #d59541;
+  display: inline-block;
+  margin: 0 .5rem .5rem .5rem;
+  width: 33%;
+  height: 4.5rem;
+  position: relative;
+}
+@media (min-width: 530px) {
+  .social-icons__icon {
+    width: 4.5rem;
+    margin: .3rem 0.3rem;
+  }
+}
+.social-icons__icon .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
